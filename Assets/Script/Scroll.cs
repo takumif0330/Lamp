@@ -27,9 +27,9 @@ public int distance = 0;
 		limit = script.ScorePoint;
 
 		if(limit > 0){
-			if (i<=240){
-				transform.Translate(0, 0, i/60 * Time.deltaTime);
-				i++;
+			if (i<=160){
+				transform.Translate(0, 0, i/40 * Time.deltaTime);
+				i += 3;
 			}
 			else{
 				transform.Translate(0, 0, 4 * Time.deltaTime);

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class bullet_rb : MonoBehaviour {
@@ -18,4 +18,5 @@ public class bullet_rb : MonoBehaviour {
 		yield return new WaitForSeconds(0.8f);
 		rigidbody.drag = 2.0f;
 	}
+
 }

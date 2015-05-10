@@ -115,8 +115,8 @@ void Update(){
 			LoadBullet0();
 
 			bullet0.transform.parent = null;
-			bullet0.rigidbody2D.velocity = dir * power;
-			bullet0.transform.rigidbody2D.AddForce ( 0 , 4, ForceMode.Impulse);
+			bullet0.rigidbody.velocity = dir * power;
+			bullet0.transform.rigidbody.AddForce ( 0 , 4 , 0 , ForceMode.Impulse);
 			ScorePoint--;
 			}
 		}else if(BallPoint < 20){
