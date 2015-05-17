@@ -20,7 +20,7 @@ public GameObject bullet9;
 
 Text ScoreText;
 
-public int ScorePoint;
+public float ScorePoint;
 public Canvas canvas;
 
 public int BallPoint;
@@ -71,6 +71,8 @@ GameObject tutorial1;
 GameObject tutorial2;
 GameObject tutorial3;
 
+GameObject Light;
+
 GameObject missFil;
 
 AudioSource sound1;
@@ -82,17 +84,23 @@ void Start(){
 	tutorial2 = transform.Find("Default/TutorialPanel2").gameObject;
 	tutorial3 = transform.Find("Default/TutorialPanel3").gameObject;
 
-	missFil = transform.Find("Default/missFilter").gameObject;
+	Light = transform.Find("Spotlight").gameObject;
 
-	ScorePoint = 25;
+	missFil = transform.Find("Default/TutorialPanel3").gameObject;
+
+	ScorePoint = 30;
 	BallPoint = 0;
 
 	multibool = true;
 	}
 
 void Update(){
+	ScorePoint -= 0.1f;
+
 	ScoreText = GetComponentInChildren<Text>();
 	ScoreText.text = "" + ScorePoint;
+
+	Light.light.range = ScorePoint;
 
 	if(ScorePoint <= 0){
 		ScorePoint = 0;

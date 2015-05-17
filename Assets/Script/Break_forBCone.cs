@@ -9,7 +9,7 @@ float limit;
 	void Start () {
 		GameObject Scroll = GameObject.Find("MainCamera");
 		Cannon script = Scroll.GetComponent<Cannon>();
-		script.ScorePoint += 3;
+		script.ScorePoint += 10;
 		if(script.BallPoint < 40){
 			script.BallPoint += 1;
 		}
