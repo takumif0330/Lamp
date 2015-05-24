@@ -88,7 +88,7 @@ void Start(){
 
 	missFil = transform.Find("Default/TutorialPanel3").gameObject;
 
-	ScorePoint = 30;
+	ScorePoint = 40;
 	BallPoint = 0;
 
 	multibool = true;
@@ -223,36 +223,36 @@ void Update(){
 
 	if(BallPoint ==  0){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture0;
+		BallImg.GetComponent<Image>().sprite = texture9;		
 	}
 	else if(BallPoint == 1){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture1;		
+		BallImg.GetComponent<Image>().sprite = texture8;		
 	}
 	else if(BallPoint == 2){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture2;
+		BallImg.GetComponent<Image>().sprite = texture7;
 	}	else if(BallPoint == 3){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture3;		
+		BallImg.GetComponent<Image>().sprite = texture6;		
 	}	else if(BallPoint == 4){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture4;		
+		BallImg.GetComponent<Image>().sprite = texture5;		
 	}	else if(BallPoint == 5){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture5;		
+		BallImg.GetComponent<Image>().sprite = texture4;		
 	}	else if(BallPoint == 6){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture6;		
+		BallImg.GetComponent<Image>().sprite = texture3;		
 	}	else if(BallPoint == 7){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture7;		
+		BallImg.GetComponent<Image>().sprite = texture2;		
 	}	else if(BallPoint == 8){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture8;		
+		BallImg.GetComponent<Image>().sprite = texture1;		
 	}	else if(BallPoint == 9){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
-		BallImg.GetComponent<Image>().sprite = texture9;		
+		BallImg.GetComponent<Image>().sprite = texture0;		
 	}	else if(BallPoint == 10){
 		GameObject BallImg = transform.FindChild("Default/Image").gameObject;
 		BallImg.GetComponent<Image>().sprite = texture10;		
